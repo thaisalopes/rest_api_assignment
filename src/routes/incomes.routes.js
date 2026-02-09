@@ -3,16 +3,16 @@
 const express = require('express');
 const router = express.Router();
 const {
-  getAllUsers,
-  createUser,
-  updateUser,
-  deleteUser,
-} = require('../controllers/users.controller');
+  getAllIncomes,
+  createIncome,
+  updateIncome,
+  deleteIncome,
+} = require('../controllers/incomes.controller');
 
 // Mounts route handlers for each endpoint
-router.get('/', getAllUsers);
-router.post('/', createUser);
-router.put('/:id', updateUser);
-router.delete('/:id', deleteUser);
+router.get('/', getAllIncomes);
+router.post('/', createIncome);
+router.put('/:id', updateIncome);
+router.delete('/:id', deleteIncome);
 
 module.exports = router;

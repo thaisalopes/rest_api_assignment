@@ -26,7 +26,7 @@ module.exports = [
     },
   },
   {
-    files: ['src/server.js', 'src/app.js'],
+    files: ['src/server.js', 'src/app.js', 'src/middleware/**/*.js'],
     rules: {
       'no-console': 'off',
     },
