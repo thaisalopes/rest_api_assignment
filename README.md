@@ -72,4 +72,4 @@ POST /expenses – Create a new expense record
 PUT /expenses/:id – Update an expense record by ID
 DELETE /expenses/:id – Delete an expense record by ID
 
--------------------------------------------------------------------------------
+---------------------------------------------------------------------------

@@ -27,7 +27,11 @@ exports.createIncome = asyncHandler(async (req, res) => {
   income.createdAt = Date.now();
   income.updatedAt = Date.now();
   const created = await create(incomesRef(), income);
-  return ok(res, { message: 'Income created successfully', income: created }, 201);
+  return ok(
+    res,
+    { message: 'Income created successfully', income: created },
+    201
+  );
 });
 
 exports.updateIncome = asyncHandler(async (req, res) => {
@@ -44,7 +48,7 @@ exports.updateIncome = asyncHandler(async (req, res) => {
   }
   delete body.createdAt; // Prevents updates to createdAt
   const updates = body;
-  
+
   //Adds timestamp for update
   updates.updatedAt = Date.now();
   const updated = await updateById(incomesRef(), id, updates);

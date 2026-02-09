@@ -34,7 +34,7 @@ exports.createUser = asyncHandler(async (req, res) => {
     updatedAt: Date.now(),
   };
   const created = await create(usersRef(), user);
-  
+
   // If the user is successfully created, it sends a 201 Created response with a success message
   // and the created user data back to the client
   return ok(
