@@ -34,7 +34,14 @@ Save the Firebase service account key JSON file locally on your machine (not in 
 
 Set the environment variable pointing to that file:
 
-GOOGLE_APPLICATION_CREDENTIALS=path_to_json_file
+    On Mac/Linux:
+    export GOOGLE_APPLICATION_CREDENTIALS=./path/to/your/serviceAccountKey.json
+    
+    On Windows (PowerShell):
+    $env:GOOGLE_APPLICATION_CREDENTIALS="path\to\your\serviceAccountKey.json"
+    
+    On Windows (CMD):
+    set GOOGLE_APPLICATION_CREDENTIALS=path\to\your\serviceAccountKey.json
 
 5. Running the Application
 
